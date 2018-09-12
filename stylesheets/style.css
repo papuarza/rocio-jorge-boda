@@ -1,0 +1,538 @@
+:root {
+  --main-color: rgb(231, 204, 163);
+  --secondary-gradient: #38C1CA;
+  --main-grey: #9FA0A7;
+  --main-black: #020204;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Pinyon Script', cursive;
+  --title-font: 'Roboto Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.home-header {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-header .menu-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 25px 25%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home-header .menu-wrapper ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 200;
+}
+
+.home-header .menu-wrapper ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.home-header h1 {
+  font-family: var(--secondary-font);
+  font-size: 84px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.home-header .date-place-wrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 25px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.home-header .date-place-wrapper p {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-family: var(--title-font);
+  font-weight: 500;
+  position: relative;
+  display: inline;
+}
+
+hr {
+  width: 80px;
+  position: absolute;
+  right: -40px;
+  border: 2px solid var(--main-color);
+  bottom: -4px;
+}
+
+.subtitle-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*POET WRAPPER*/
+
+.poet-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 50px 5% 50px 20px;
+}
+
+.poet-wrapper .text-wrapper {
+  padding: 80px 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.poet-wrapper .text-wrapper p {
+  font-weight: 200;
+  font-family: var(--main-font);
+  margin: 15px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.poet-wrapper .image-wrapper {
+  background-image: url('../images/san-vicente-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+/*AGENDA WRAPPER*/ 
+
+.agenda-wrapper {
+  padding: 50px 0;
+}
+
+.iglesia-wrapper {
+  padding-top: 50px;
+}
+
+.party-wrapper {
+  padding-bottom: 50px;
+}
+
+.iglesia-wrapper, .party-wrapper {
+  width: 100%;
+  display: flex;
+  min-height: 450px;
+}
+
+.agenda-wrapper .image-wrapper {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-wrapper.iglesia {
+  background-image: url('../images/iglesia-2.jpg');
+}
+
+.image-wrapper.fiesta {
+  background-image: url('../images/fiesta-2.jpg');
+}
+
+.iglesia-wrapper .text-wrapper, .party-wrapper .text-wrapper {
+  padding: 50px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+.agenda-wrapper h3 {
+  color: var(--main-color);
+  font-weight: 400;
+}
+
+.agenda-wrapper h4 {
+  font-size: 20px;
+}
+
+.agenda-wrapper span {
+  color: var(--main-grey);
+  font-weight: 200;
+}
+
+.agenda-wrapper p {
+  width: 60%;
+  margin: 30px auto;
+  font-weight: 200;
+}
+
+.agenda-wrapper a {
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: var(--main-color);
+  width: 200px;
+  text-decoration: none;
+}
+
+
+/*ALOJAMIENTO WRAPPER*/ 
+
+.alojamientos-items-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.hotel-item-wrapper {
+  width: 50%;
+  padding: 50px 4% 30px 8%;
+}
+
+.hotel-item-wrapper .image-wrapper {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hotel-item-wrapper .image-wrapper.hotel-1 {
+  background-image: url('../images/hote-gerra.jpg');
+}
+
+.hotel-item-wrapper .image-wrapper.hotel-2 {
+  background-image: url('../images/hotel-miramar.jpg');
+}
+
+.hotel-item-wrapper .text-wrapper {
+  padding: 40px 20px 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-item-wrapper .text-wrapper a {
+  color: var(--main-grey);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.hotel-item-wrapper .text-wrapper p:nth-child(4) {
+  margin-top: 30px;
+}
+
+.hotel-item-wrapper .text-wrapper p {
+  font-weight: 200;
+  margin: 5px 0;
+}
+
+.hotel-item-wrapper .text-wrapper h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.hotel-item-wrapper .text-wrapper .tarifa-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-item-wrapper .text-wrapper .tarifa-wrapper span {
+  color: var(--main-color);
+}
+
+.hotel-item-wrapper .text-wrapper ul {
+  margin-top: 15px;
+  color: var(--main-grey);
+}
+
+.hotel-item-wrapper .text-wrapper ul h5 {
+  margin-bottom: 5px;
+}
+
+.hotel-item-wrapper .text-wrapper ul li {
+  font-size: 12px;
+  font-weight: 200;
+  list-style-position: inside;
+  line-height: 16px;
+}
+
+/*HACER WRAPPER*/ 
+
+.hacer-wrapper {
+  padding: 50px 30px;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 80px 10% 40px 0;
+  width: 100%;
+}
+
+.activity-item p {
+  font-weight: 200;
+  margin: 8px 0;
+}
+
+.activity-item h3 {
+ height: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+}
+
+.activity-item.left h3 {
+  transform: rotate(270deg);
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+.activity-item.right {
+  padding: 80px 0 25px 10%;
+}
+
+.activity-item.right h3 {
+  transform: rotate(90deg);
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.activity-item .content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item .content-wrapper.extra {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.activity-item .extra-activity-wrapper .image-wrapper {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.activity-item .content-wrapper .logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.activity-item {
+  border-bottom: 1px solid rgba(139, 139, 139, 0.115);
+}
+
+.activity-item iframe {
+  margin-top: 30px;
+}
+
+.activity-item .content-wrapper .logo-wrapper img {
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.activity-item .content-wrapper .logo-wrapper img:last-child {
+  height: 70px;
+}
+
+.activity-item .extra-activity-wrapper .image-wrapper.extra-1 {
+  background-image: url('../images/cafe-michelin.png');
+}
+
+.activity-item .extra-activity-wrapper .image-wrapper.extra-2 {
+  background-image: url('../images/rutas-caballos.png');
+}
+
+.activity-item .extra-activity-wrapper .image-wrapper.extra-3 {
+  background-image: url('../images/cuevas-soplao.png');
+}
+
+.activity-item .extra-activity-wrapper .image-wrapper.extra-4 {
+  background-image: url('../images/calas-prezello.png');
+}
+
+.activity-item .extra-activity-wrapper {
+  width: 50%;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.activity-item:last-child {
+  border: 0;
+}
+
+.detalles-wrapper .text-wrapper {
+  padding: 40px 30%;
+  font-weight: 200;
+  text-align: center;
+}
+
+.detalles-wrapper .text-wrapper p {
+  margin: 8px 0;
+}
+
+.detalles-wrapper .text-wrapper p:last-child {
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.boda-mas-wrapper {
+  padding: 15px 20% 50px 20%;
+  display:  flex;
+  align-items: center;
+}
+
+.bodamas-text-wrapper {
+  font-weight: 200;
+  padding: 20px 30px;
+}
+
+.boda-mas-wrapper img {
+  height: 150px;
+}
+
+.bodamas-text-wrapper p {
+  margin: 16px 0;
+}
+
+.boda-mas-wrapper p a {
+  color: #000;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .poet-wrapper {
+      flex-wrap: wrap;
+      height: auto;;
+  }
+
+  .poet-wrapper .text-wrapper {
+    width: 100%;
+  }
+  
+  .poet-wrapper .image-wrapper, .agenda-wrapper .image-wrapper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .iglesia-wrapper {
+    padding-top: 0;
+  }
+
+  .iglesia-wrapper, .party-wrapper, .alojamientos-items-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .iglesia-wrapper .image-wrapper {
+    order: 1;
+  }
+
+  .iglesia-wrapper .text-wrapper, .party-wrapper .text-wrapper, .hotel-item-wrapper, .activity-item .extra-activity-wrapper {
+    width: 100%;
+  }
+
+  .hotel-item-wrapper .text-wrapper a, .hotel-item-wrapper .text-wrapper ul li {
+    font-size: 14px;
+  }
+
+  .activity-item, .activity-item.right {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .activity-item.right .content-wrapper {
+    order: 1;
+  }
+
+  .activity-item.right iframe {
+    width: 100%;
+  }
+
+  .activity-item.left h3, .activity-item.right h3 {
+    margin-top: 0;
+    transform: rotate(0)
+  }
+
+  .activity-item .content-wrapper .logo-wrapper img {
+    margin-bottom: 0;
+  }
+
+  .boda-mas-wrapper {
+    flex-direction: column;
+  }
+
+  .detalles-wrapper hr {
+    right: 50px;
+  }
+
+  .detalles-wrapper .text-wrapper {
+    padding: 40px 15%;
+  }
+
+  .boda-mas-wrapper {
+    padding: 15px 10% 50px 10%;
+    text-align: center;
+  }
+
+  .hacer-wrapper {
+    padding-bottom: 10px;
+  }
+  .home-header .menu-wrapper ul {
+    flex-direction: column;
+  }
+
+  .home-header .menu-wrapper {
+    padding: 25px 5%;
+  }
+  .home-header .menu-wrapper ul li {
+    margin: 5px 0;
+  }
+
+  .poet-wrapper .text-wrapper {
+    padding: 30px 10%;
+  }
+}
+
